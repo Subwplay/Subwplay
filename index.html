@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Subwplay — Bio</title>
+  <title>Subwplay Bio</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,7 +21,6 @@
       --card-hover: rgba(255,255,255,0.08);
     }
 
-    /* Hide default cursor on desktop */
     @media (hover: hover) {
       *, html, body { cursor: none !important; }
     }
@@ -319,7 +318,7 @@
       <span>GitHub</span>
     </a>
 
-    <a href="mailto:your@gmail.com" class="social-btn" style="--btn-color:#b8ff57">
+    <a href="mailto:subwplayads@gmail.com" class="social-btn" style="--btn-color:#b8ff57">
       <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
       <span>Email</span>
     </a>
@@ -341,9 +340,8 @@
 
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
-    made with ♥ · © 2026 Subwplay
+    2026 Subwplay
   </div>
 
 </div>
@@ -394,12 +392,11 @@ document.addEventListener('mousemove', e=>{
   requestAnimationFrame(loop);
 })();
 
-// Hover state
 document.querySelectorAll('a,button,.tag,.avatar-wrap').forEach(el=>{
   el.addEventListener('mouseenter',()=>document.body.classList.add('c-hover'));
   el.addEventListener('mouseleave',()=>document.body.classList.remove('c-hover'));
 });
-// Click burst
+
 document.addEventListener('mousedown',()=>{ document.body.classList.add('c-click'); spawnParticle(mx,my,true); });
 document.addEventListener('mouseup',  ()=>  document.body.classList.remove('c-click'));
 
